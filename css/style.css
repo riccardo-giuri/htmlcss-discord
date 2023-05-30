@@ -4,15 +4,19 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /* header style */
 .navbar-container{
-    background-color: #add8e6;
+    background-color: #255EE9;
     padding: 1rem 0rem;
 }
 
-/* .brdr-dash{
-    border: 1px dashed black;
-} */
+.nav-logo img{
+    vertical-align: middle;
+}
 
 .top-navbar ul{
     list-style: none;
@@ -22,82 +26,212 @@
 
 .top-navbar ul a{
     display: inline-block;
-    padding: 0rem .3rem;
+    padding: 0rem 1.2rem;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .navbar-container .nav-links{
     flex-grow: 1;
 }
 
-.nav-links, .nav-logo, .nav-login{
-    border: 1px dashed black;
+.nav-links, .nav-logo {
     padding: 0.3rem;
 }
 
-.nav-login, .nav-logo{
-    width: 190px;
+.btn-container, .nav-logo{
+    min-width: 150px;
 }
 
-.nav-login{
-    text-align: right;
+.nav-btn-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.white-little-btn{
+    background-color: white;
+    border-radius: 50px;
+    padding: .7rem 0.9rem;
+    border: none;
+}
+
+.white-large-btn{
+    font-size: 19px;
+    background-color: white;
+    border-radius: 50px;
+    padding: .9rem 1.2rem;
+    border: none;
+}
+
+.white-large-btn::before{
+    content: "\01F82B";
+    font-size: 21px;
+    line-height: 100%;
+    vertical-align: middle;
+}
+
+.black-little-btn{
+    background-color: #23272A;
+    color: white;
+    border-radius: 50px;
+    padding: .7rem 0.9rem;
+    border: none;
+}
+
+.black-large-btn{
+    font-size: 19px;
+    background-color: #23272A;
+    color: white;
+    border-radius: 50px;
+    padding: 0.9rem 1.2rem;
+    border: none;
 }
 
 .top-navbar{
     display: flex;
-    width: 65%;
+    max-width: 1200px;
     margin: 0 auto;
-    background-color: #daa520;
     line-height: 30px;
+    align-items: center;
 }
 
 header > section{
-    background-color: #00008b;
+    display: flex;
+    background-image: url("../img/jumbo.png");
+    background-size: 100%;
+    background-position: center;
     padding: 40px 0px;
+    min-height: 620px;
+    /* justify-content: center; */
 }
 
 .box-1{
-    background-color: #ee82ee;
     margin: auto;
-    max-width: 900px;
-    min-height: 400px;
+    max-width: 845px;
+    text-align: center;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+h1{
+    font-size: 46px;
+    color: white;
+}
+
+.box-1 p{
+    font-size: 19px;
+    line-height: 160%;
+    margin-top: 2.1rem;
+    margin-bottom: 1rem;
+    color: white;
 }
 
 /* main style */
 .sezione-1{
-    padding: 2.5rem 0rem;
+    padding: 7rem 0rem;
 }
 
 .box-2{
     display: flex;
     margin: 0 auto;
     max-width: 1200px;
-    min-height: 500px;
+    /* min-height: 500px; */
 }
 
-.box-2 .img{
-    background-color: #1e90ff;
+.box-2 .img-container{
     width: 60%;
 }
 
-.box-2 .text{
-    background-color: #ffc0cb;
+.box-2 .text-container{
     width: 40%;
 }
 
-section.sezione-2, section.sezione-3{
-    padding: 2.5rem 0rem;
-    background-color: #d3d3d3;
+.box-2 .text-container h2{
+    margin-top: 2.5rem;
+    font-size: 48px;
+    margin-bottom: 2rem;
+}
+
+.box-2 .text-container p{
+    font-size: 18px;
+    line-height: 160%;
+}
+
+section.sezione-2{
+    padding: 7rem 0rem;
+    background-color: #F6F6F6;
+}
+
+section.sezione-3{
+    padding: 7rem 0rem 0rem;
+    background-color: #F6F6F6
 }
 
 .box-3{
     margin: auto;
     max-width: 1200px;
     min-height: 900px;
-    background-color: #228b22;
+    text-align: center;
 }
 
+.box-3 h2{
+    font-size: 48px;
+    margin-bottom: 2rem;
+}
+
+.box-3 p{
+    font-size: 18px;
+    line-height: 160%;
+}
+
+.box-3 img{
+    width: 100%;
+}
+
+.download-container{
+    margin: 0 auto;
+    text-align: center;
+    background-color: #F6F6F6;
+    vertical-align: middle;
+    padding: 1rem 0rem 8rem;
+}
+
+.question-container{
+    display: flex;
+    min-height: 60px;
+    background-image: url(/img/stars.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.question-container h4{
+    font-size: 26px;
+}
+
+.lilla-large-btn{
+    font-size: 19px;
+    background-color: #7289DA;
+    color: white;
+    border-radius: 50px;
+    padding: .9rem 1.2rem;
+    border: none;
+}
+
+.lilla-large-btn::before{
+    content: "\01F82B";
+    font-size: 21px;
+    line-height: 100%;
+    vertical-align: middle;
+}
+
+/* footer style */
 .foot-sezione-1{
     padding: .6rem 0px 2.5rem;
     background-color: #23272a;
